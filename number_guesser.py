@@ -18,7 +18,7 @@ while True:
     guesses += 1
     user_guess = input("Make a guess: ")
     if user_guess.isdigit():
-        user_guess = int(top_of_range)
+        user_guess = int(user_guess)
     else:
         print("Please type a number")
         continue
@@ -30,6 +30,4 @@ while True:
     else:
         print("You were below the number!")
 
-print("You got it in ", guesses, "guesses")
-
-print(random_number)
+print("You got it in", guesses, "guesses")
